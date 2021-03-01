@@ -1,1 +1,1 @@
-# 50 projects per day
+# 50 projects in 50 days
