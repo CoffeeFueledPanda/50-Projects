@@ -13,6 +13,12 @@ body {
   height: 100vh;
   overflow: hidden;
   margin: 0;
+  background-image: linear-gradient(
+    to top,
+    #fdcbf1 0%,
+    #fdcbf1 1%,
+    #e6dee9 100%
+  );
 }
 
 .container {
@@ -26,17 +32,19 @@ body {
   background-repeat: no-repeat;
   height: 80vh;
   border-radius: 50px;
-  color: #ffffff;
   cursor: pointer;
   flex: 0.5;
   margin: 10px;
   position: relative;
   transition: flex 0.7s ease-in;
   filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.6));
+  border-top: solid 1.5px rgb(176, 255, 255, 50);
 }
 
 .panel h3 {
   font-size: 24px;
+  color: rgb(255, 248, 218);
+  filter: drop-shadow(0 0.15rem 0.1rem rgb(0, 0, 0));
   position: absolute;
   bottom: 20px;
   left: 30px;
@@ -50,6 +58,7 @@ body {
 
 .panel.active h3 {
   opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
 }
 
 @media (max-width: 480px) {
@@ -57,8 +66,8 @@ body {
     width: 100vh;
   }
 
-  .panel:nth-of-type(4),
-  .panel:nth-of-type(4) {
+  .panel:nth-of-type(5),
+  .panel:nth-of-type(6) {
     display: none;
   }
 }
