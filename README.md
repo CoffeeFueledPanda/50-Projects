@@ -3,6 +3,7 @@
 # Tools:
 
 - VS-Code
+- [Easing-Gradients](https://larsenwork.com/easing-gradients/)
 
 # Services:
 
